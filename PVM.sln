@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pvm", "pvm\pvm.csproj", "{50700670-CBA9-40D3-84DC-C821BB772B82}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PVM Setup", "PVM Setup\PVM Setup.vdproj", "{97FEEA54-3A4E-4943-9595-F536FCA6BEF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50700670-CBA9-40D3-84DC-C821BB772B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50700670-CBA9-40D3-84DC-C821BB772B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50700670-CBA9-40D3-84DC-C821BB772B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50700670-CBA9-40D3-84DC-C821BB772B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FEEA54-3A4E-4943-9595-F536FCA6BEF6}.Debug|Any CPU.ActiveCfg = Debug
+		{97FEEA54-3A4E-4943-9595-F536FCA6BEF6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43E50F09-C641-4FAE-A2B7-9AD563BE21B9}
+	EndGlobalSection
+EndGlobal
