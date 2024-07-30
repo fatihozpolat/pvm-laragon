@@ -1,4 +1,4 @@
-﻿# PHP Version Manager [![version](https://img.shields.io/badge/version-1.0.0-blue.svg)]
+﻿# PHP Version Manager ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 ## Intro
 `pvm` allows you to quickly switch between PHP versions on your local machine.
