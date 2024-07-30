@@ -1,0 +1,35 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET Release
+
+on:
+  push:
+    tags: [ "v*.*.*" ]
+
+jobs:
+  build:
+    permissions: write-all
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet publish --configuration Release --output ./publish
+    - name: Extract Tag Name
+      run: echo "TAG_NAME=$(echo ${GITHUB_REF#refs/tags/})" >> $GITHUB_ENV
+    - name: Create Zip Archive
+      run: 7z a ./pvm.zip ./publish
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ./pvm.zip
+        tag_name: ${{ env.TAG_NAME }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        body: Release ${{ env.TAG_NAME }}
