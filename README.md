@@ -72,6 +72,8 @@ $ pvm apache use 2.4.54
 
 It's that easy to use `pvm`!
 
+## Requirements
+[.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 ## Installation
 - Go to [Releases](https://github.com/fatihozpolat/pvm-laragon/releases) and download the pvm.zip file.
