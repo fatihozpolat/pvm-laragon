@@ -462,7 +462,7 @@ namespace ConsoleApp
                         Console.WriteLine("  " + dir.Substring(dir.LastIndexOf("\\") + 1));
                     break;
                 case "fix":
-                    var downloadUrl = "https://www.apachelounge.com/download/VS17/binaries/httpd-2.4.62-240718-win64-VS17.zip";
+                    var downloadUrl = "https://github.com/fatihozpolat/pvm-laragon/raw/main/apache/httpd-2.4.62-240904-win64-VS17.zip";
                     var zipName = "httpd-2.4.62-win64-VS17.zip";
                     var zipPath = Path.Combine(apachePath, zipName);
                     await Task.Run(() => DownloadFile(downloadUrl, zipPath));
